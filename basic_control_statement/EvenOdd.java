@@ -1,22 +1,25 @@
-//3.	Write a program to check whether a number is even or odd.
-package com.hefshine.basic_control_statement;
-import java.util.Scanner;
+//3.	Display all even and odd numbers from 1 to 100.
+package com.hefshine.control_Statements;
+
 public class EvenOdd {
 
 	public static void main(String[] args) {
-		Scanner sc=new Scanner(System.in);
-		int number;
-		System.out.println("Enter the number");
-		number=sc.nextInt();
-		if(number%2==0)
+		int even=0,odd=0;
+		for(int i=1;i<=5;i++)
 		{
-			System.out.println(+number+ " Number is even");
+		if(i%2==0)
+			{
+				even++;
+			
+			}
+			else 
+			{
+				odd++;
+			
+			}
 		}
-		else
-		{
-			System.out.println(+number+ " Number is odd");
-		}
-
+		System.out.println("Total number of even numbers is"+even);
+		System.out.println("Total number of odd numbers is"+odd);
 	}
-
+	
 }
